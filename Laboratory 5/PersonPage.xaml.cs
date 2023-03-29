@@ -38,8 +38,8 @@ namespace Laboratory_5
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double num = 0.0;
-            
-            if (SurnameBox.Text == null || NameBox.Text == null || LoginBox.Text == null || PasswordBox.Text == null || ComboRoleId.SelectedItem == null)
+
+            if (SurnameBox.Text == null || NameBox.Text == null || LoginBox.Text == null || PasswordBox.Text == null || ComboRoleId.SelectedItem == null||SurnameBox.Text == "" || NameBox.Text == "" || LoginBox.Text == "" || PasswordBox.Text == "" || ComboRoleId.SelectedItem == "")
             {
                 MessageBox.Show("Необходимо заполнить все поля");
             }
