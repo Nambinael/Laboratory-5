@@ -85,7 +85,7 @@ namespace Laboratory_5
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            List<FireModeModel> forImport = DeserializeClass.DeserializeObject<List<FireModeModel>>();
+            List<FireModeModel> forImport = DeserializeClass.DeserializeObject<List<FireModeModel>>() ?? new List<FireModeModel>();
             foreach (var item in forImport)
             {
                 fire_mode.InsertQuery(item.fire_mode_name);
