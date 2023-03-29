@@ -1,0 +1,33 @@
+﻿<Page x:Class="Laboratory_5.FireModePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Laboratory_5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FireModePage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid  CanUserAddRows="False"  x:Name="FireModeGrid" Grid.ColumnSpan="4" Grid.RowSpan="3" SelectionChanged="FireModeGrid_SelectionChanged"/>
+        <Button Content="Добавить запись" Grid.Column="5" Grid.Row="0" Click="Button_Click"/>
+        <Button Content="Удалить запись" Grid.Column="5" Grid.Row="1" Click="Button_Click_1"/>
+        <Button Content="Сохранить запись"  Grid.Column="5" Grid.Row="2" Click="Button_Click_2"/>
+        <Button Content="Импортировать данные"  Grid.Column="5" Grid.Row="3" Click="Button_Click_3" />
+        <TextBox  x:Name="fire_modeBox" Grid.Column="0" Grid.Row="3" Margin="0,30,0,0" Height="25"/>
+        <TextBlock Text="Режим огня" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Margin="0,20" Foreground="AliceBlue"/>
+    </Grid>
+</Page>
