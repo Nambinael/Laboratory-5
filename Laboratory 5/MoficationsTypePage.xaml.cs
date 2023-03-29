@@ -86,7 +86,7 @@ namespace Laboratory_5
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            List<ModificationTypeModel> forImport = DeserializeClass.DeserializeObject<List<ModificationTypeModel>>();
+            List<ModificationTypeModel> forImport = DeserializeClass.DeserializeObject<List<ModificationTypeModel>>() ?? new List<ModificationTypeModel>();
             foreach (var item in forImport)
             {
                 ModificationType.InsertQuery(item.modification_type_name);
